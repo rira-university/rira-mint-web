@@ -12,11 +12,40 @@
     padding            : 100px 0 50px 0;
 
     >main {
+        position        : relative;
         width           : 1134px;
         height          : 624px;
         background-size : cover;
         background-image: url("/images/panel@2x.png");
         margin          : auto;
+
+        >.language {
+            position : absolute;
+            right    : 0;
+            top      : -54px;
+            display  : flex;
+            font-size: 20px;
+
+            >a {
+                margin-left     : 10px;
+                display         : block;
+                background-color: #FFFFFF;
+                border-radius   : 40px;
+                padding         : 10px 10px 0;
+
+                &.en {
+                    border: 5px solid #FFBCDD;
+                }
+
+                &.kr {
+                    border: 5px solid #FCEA86;
+                }
+
+                &.jp {
+                    border: 5px solid #A7CCFF;
+                }
+            }
+        }
 
         >h1 {
             font-family: Cloister;
@@ -29,10 +58,79 @@
         >.content {
             margin-top: 10px;
             display   : flex;
-            padding   : 0 85px;
+            padding   : 0 50px;
+
+            >img {
+                width : 378px;
+                height: 374px;
+            }
 
             >.inner {
                 padding-top: 50px;
+                width      : 100%;
+
+                >input {
+                    display         : block;
+                    width           : 100%;
+                    padding-top     : 14px;
+                    height          : 41px;
+                    background-color: rgba(0, 0, 0, 0.16);
+                    margin-bottom   : 14px;
+                    font-family     : MuseumClassicMediumA;
+                    font-size       : 26px;
+                    color           : #484848;
+                }
+
+                >.buttons {
+                    .float-wrapper();
+
+                    >a,
+                    >select {
+                        font-family  : MuseumClassicMediumA;
+                        font-size    : 30px;
+                        color        : #484848;
+                        border       : none;
+                        width        : 270px;
+                        height       : 72px;
+                        text-align   : center;
+                        padding-top  : 14px;
+                        border       : 5px solid #FFFFFF;
+                        border-radius: 36px;
+                    }
+
+                    >a {
+                        float           : left;
+                        background-color: rgba(0, 0, 0, 0.16);
+                        display         : flex;
+                        flex-direction  : column;
+                        justify-content : center;
+                    }
+
+                    >select {
+                        float           : right;
+                        background-color: rgba(0, 0, 0, 0.16);
+                    }
+                }
+
+                >.progress-text-container {
+                    margin-top     : 32px;
+                    display        : flex;
+                    justify-content: space-between;
+
+                    >.progress-text {}
+                }
+
+                >.progress {
+                    width           : 100%;
+                    height          : 41px;
+                    background-color: rgba(0, 0, 0, 0.16);
+
+                    >.progress-bar {
+                        height          : 100%;
+                        width           : 0%;
+                        background-color: #707070;
+                    }
+                }
             }
         }
     }
