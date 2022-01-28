@@ -1,0 +1,31 @@
+@import "base.less";
+@import "palette.less";
+
+@font-face {
+    font-family : 'MuseumClassicMediumA';
+    src         : url('/font/MuseumClassicMediumA.woff2') format('woff2'), url('/font/MuseumClassicMediumA.woff') format('woff');
+    font-weight : 500;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family : 'Cloister';
+    src         : url('/font/CloisterBlack-Light.woff2') format('woff2'), url('/font/CloisterBlack-Light.woff') format('woff');
+    font-weight : 300;
+    font-style  : normal;
+    font-display: swap;
+}
+
+html,
+body {
+    position   : relative;
+    width      : 100%;
+    height     : 100%;
+    font-family: MuseumClassicMediumA;
+    font-size  : 30px;
+    color      : #484848;
+}
+
+// views
+@import "view/home.less";
