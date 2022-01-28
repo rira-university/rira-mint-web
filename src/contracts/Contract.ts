@@ -19,7 +19,7 @@ export default abstract class Contract extends EventContainer {
     }
 
     public async loadExtWalletContract() {
-        if (await ExtWallet.loadChainId() !== 8217) {
+        if (await ExtWallet.loadChainId() !== 1001) {
             this.fireEvent("wrongNetwork");
             console.error("Wrong Network");
         } else {
