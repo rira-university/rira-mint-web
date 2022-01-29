@@ -37,15 +37,15 @@ export default class Home implements View {
                     el("img", { src: "/images/profile.png", srcset: "/images/profile@2x.png 2x" }),
                     el(".inner",
                         el("p", msg({
-                            en: "This is to certify that",
+                            en: "This certified that",
                             ko: "본 학생에게 리라공과대학의 입학을 허가하며",
-                            ja: "当学生はリラ工科大学入学を許可します。",
+                            ja: "下記学生のリラ工科大学への合格を証明し、",
                         })),
                         this.addressInput = el("input", { placeholder: "0x1234...", readonly: "readonly" }),
                         el("p", msg({
-                            en: "is registered as a student at our institution.",
+                            en: "has been accepted to Rira Institue of Technology",
                             ko: "이에 본 증서를 수여합니다.",
-                            ja: "入学を証明するためにこの証書を授与します。",
+                            ja: "ここに、本学への入学を許可します。",
                         })),
                         el(".buttons",
                             this.connectButton = el("a", "Wallet Connect", {
