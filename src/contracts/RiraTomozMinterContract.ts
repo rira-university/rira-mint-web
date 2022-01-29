@@ -6,7 +6,7 @@ import Contract from "./Contract";
 class RiraTomozMinterContract extends Contract {
 
     constructor() {
-        super("0x2Ab28bbd424d5ecBA1f3D6381026B3cD16B4bE59", RiraTomozMinterArtifact.abi);
+        super("0xc36291d43d7c33b3d261e775d712404c3e386db9", RiraTomozMinterArtifact.abi);
     }
 
     public async mintPrice(): Promise<BigNumber> {
