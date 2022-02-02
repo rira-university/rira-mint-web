@@ -7,7 +7,7 @@ import Wallet from "../klaytn/Wallet";
 
 export default class Home implements View {
 
-    private TODAY_COUNT = 800;
+    private TODAY_COUNT = 500;
 
     private container: DomNode;
     private interval: any;
